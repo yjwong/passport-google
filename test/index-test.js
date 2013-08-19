@@ -1,14 +1,14 @@
 var vows = require('vows');
 var assert = require('assert');
 var util = require('util');
-var google = require('passport-google');
+var nusnet = require('passport-nusnet');
 
 
-vows.describe('passport-google').addBatch({
+vows.describe('passport-nusnet').addBatch({
   
   'module': {
     'should report a version': function (x) {
-      assert.isString(google.version);
+      assert.isString(nusnet.version);
     },
   },
   

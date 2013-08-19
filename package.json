@@ -1,14 +1,14 @@
 {
-  "name": "passport-google",
+  "name": "passport-nusnet",
   "version": "0.3.0",
-  "description": "Google (OpenID) authentication strategy for Passport.",
-  "keywords": ["passport", "google", "auth", "authn", "authentication", "identity"],
+  "description": "NUSNET authentication strategy for Passport.",
+  "keywords": ["passport", "nus", "nusnet", "auth", "authn", "authentication", "identity"],
   "repository": {
     "type": "git",
-    "url": "git://github.com/jaredhanson/passport-google.git"
+    "url": "git://github.com/yjwong/passport-nusnet.git"
   },
   "bugs": {
-    "url": "http://github.com/jaredhanson/passport-google/issues"
+    "url": "http://github.com/yjwong/passport-nusnet/issues"
   },
   "licenses": [ {
     "type": "MIT",
@@ -19,7 +19,7 @@
     "email": "jaredhanson@gmail.com",
     "url": "http://www.jaredhanson.net/"
   },
-  "main": "./lib/passport-google",
+  "main": "./lib/passport-nusnet",
   "dependencies": {
     "pkginfo": "0.2.x",
     "passport-openid": "0.3.x"

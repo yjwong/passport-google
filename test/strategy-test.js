@@ -1,23 +1,23 @@
 var vows = require('vows');
 var assert = require('assert');
 var util = require('util');
-var GoogleStrategy = require('passport-google/strategy');
+var NUSNETStrategy = require('passport-nusnet/strategy');
 
 
-vows.describe('GoogleStrategy').addBatch({
+vows.describe('NUSNETStrategy').addBatch({
   
   'strategy': {
     topic: function() {
-      return new GoogleStrategy({ returnURL: 'https://www.example.com/auth/google/return' },
+      return new NUSNETStrategy({ returnURL: 'https://www.example.com/auth/nusnet/return' },
         function() {}
       );
     },
     
-    'should be named google': function (strategy) {
-      assert.equal(strategy.name, 'google');
+    'should be named nusnet': function (strategy) {
+      assert.equal(strategy.name, 'nusnet');
     },
     'should have correct provider URL': function (strategy) {
-      assert.equal(strategy._providerURL, 'https://www.google.com/accounts/o8/id');
+      assert.equal(strategy._providerURL, 'https://openid.nus.edu.sg/auth');
     },
   },
   
